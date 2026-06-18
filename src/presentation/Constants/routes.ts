@@ -6,6 +6,10 @@ export const ROUTES = {
 
     REGISTER: "/register",
 
-    CREATE_PASSWORD: "/create-password"
+    CREATE_PASSWORD: "/create-password",
+
+    RESET_PASSWORD: "/reset-password",
+
+    FORGOT_PASSWORD: "/forgot-password"
 
 };

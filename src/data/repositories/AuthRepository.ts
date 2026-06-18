@@ -8,6 +8,10 @@ import type { CreatePasswordCommandDto } from "../dtos/CreatePasswordCommandDto"
 import type { CreatePasswordResponseDto } from "../dtos/CreatePasswordResponseDto";
 import type { LogoutCommandDto } from "../dtos/LogoutCommandDto";
 import type { LogoutResponseDto } from "../dtos/LogoutResponseDto";
+import type { ResetPasswordCommandDto } from "../dtos/ResetPasswordCommandDto";
+import type { ResetPasswordResponseDto } from "../dtos/ResetPasswordResponseDto";
+import type { ForgotPasswordCommandDto } from "../dtos/ForgotPasswordCommandDto";
+import type { ForgotPasswordResponseDto } from "../dtos/ForgotPasswordResponseDto";
 
 export class AuthRepository implements IAuthRepository{
 
@@ -53,6 +57,28 @@ export class AuthRepository implements IAuthRepository{
 
         const response = await api.post<LogoutResponseDto>(
             '/Auth/Logout',
+            dto
+        );
+
+        return response.data;
+    }
+    
+    async resetPassword(
+        dto: ResetPasswordCommandDto
+    ): Promise<ResetPasswordResponseDto> {
+        const response = await api.post<ResetPasswordResponseDto>(
+            '/Auth/ResetPassword',
+            dto
+        );
+
+        return response.data;
+    }
+
+    async forgotPassword(
+        dto: ForgotPasswordCommandDto
+    ): Promise<ForgotPasswordResponseDto> {
+        const response = await api.post<ForgotPasswordResponseDto>(
+            '/Auth/ForgotPassword',
             dto
         );
 
