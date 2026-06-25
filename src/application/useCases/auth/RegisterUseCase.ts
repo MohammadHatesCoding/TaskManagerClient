@@ -1,5 +1,5 @@
 import type { IAuthRepository } from "../../../core/repositories/IAuthRepository";
-import type { RegisterCommandDto } from "../../../data/dtos/RegisterCommandDto";
+import type { RegisterCommandDto } from "../../../data/dtos/Auth/RegisterCommandDto";
 
 export class RegisterUseCase{
 

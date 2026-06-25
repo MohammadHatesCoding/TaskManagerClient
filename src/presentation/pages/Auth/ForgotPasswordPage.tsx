@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-import AuthLayout from "../layouts/Layout";
+import AuthLayout from "../../layouts/Layout";
 
-import Card from "../components/UI/Card";
+import Card from "../../components/UI/Card";
 
-import Input from "../components/UI/Input";
+import Input from "../../components/UI/Input";
 
-import Button from "../components/UI/Button";
+import Button from "../../components/UI/Button";
 
-import { AuthRepository } from "../../data/repositories/AuthRepository";
+import { AuthRepository } from "../../../data/repositories/AuthRepository";
 
-import { ForgotPasswordUseCase } from "../../application/useCases/auth/ForgotPasswordUseCase";
+import { ForgotPasswordUseCase } from "../../../application/useCases/auth/ForgotPasswordUseCase";
 
 export default function ForgotPasswordPage() {
 

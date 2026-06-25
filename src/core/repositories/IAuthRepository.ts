@@ -1,15 +1,15 @@
-import type { CreatePasswordCommandDto } from "../../data/dtos/CreatePasswordCommandDto";
-import type { CreatePasswordResponseDto } from "../../data/dtos/CreatePasswordResponseDto";
-import type { ForgotPasswordCommandDto } from "../../data/dtos/ForgotPasswordCommandDto";
-import type { ForgotPasswordResponseDto } from "../../data/dtos/ForgotPasswordResponseDto";
-import type { LoginCommandDto } from "../../data/dtos/LoginCommandDto";
-import type { LoginResponseDto } from "../../data/dtos/LoginResponseDto";
-import type { LogoutCommandDto } from "../../data/dtos/LogoutCommandDto";
-import type { LogoutResponseDto } from "../../data/dtos/LogoutResponseDto";
-import type { RegisterCommandDto } from "../../data/dtos/RegisterCommandDto";
-import type { RegisterResponseDto } from "../../data/dtos/RegisterResponseDto"
-import type { ResetPasswordCommandDto } from "../../data/dtos/ResetPasswordCommandDto";
-import type { ResetPasswordResponseDto } from "../../data/dtos/ResetPasswordResponseDto";
+import type { CreatePasswordCommandDto } from "../../data/dtos/Auth/CreatePasswordCommandDto";
+import type { CreatePasswordResponseDto } from "../../data/dtos/Auth/CreatePasswordResponseDto";
+import type { ForgotPasswordCommandDto } from "../../data/dtos/Auth/ForgotPasswordCommandDto";
+import type { ForgotPasswordResponseDto } from "../../data/dtos/Auth/ForgotPasswordResponseDto";
+import type { LoginCommandDto } from "../../data/dtos/Auth/LoginCommandDto";
+import type { LoginResponseDto } from "../../data/dtos/Auth/LoginResponseDto";
+import type { LogoutCommandDto } from "../../data/dtos/Auth/LogoutCommandDto";
+import type { LogoutResponseDto } from "../../data/dtos/Auth/LogoutResponseDto";
+import type { RegisterCommandDto } from "../../data/dtos/Auth/RegisterCommandDto";
+import type { RegisterResponseDto } from "../../data/dtos/Auth/RegisterResponseDto"
+import type { ResetPasswordCommandDto } from "../../data/dtos/Auth/ResetPasswordCommandDto";
+import type { ResetPasswordResponseDto } from "../../data/dtos/Auth/ResetPasswordResponseDto";
 
 export interface IAuthRepository {
     register(

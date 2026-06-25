@@ -1,12 +1,21 @@
+import { ReactNode, useState } from "react";
+
 import Navbar from "../components/UI/Navbar";
 
-type DashboardLayoutProps = {
-    children: React.ReactNode;
+import Sidebar from "../components/UI/Sidebar";
+
+type Props = {
+    children: ReactNode;
 };
 
 export default function DashboardLayout({
     children
-}: DashboardLayoutProps) {
+}: Props) {
+
+    const [
+        isSidebarOpen,
+        setIsSidebarOpen
+    ] = useState(false);
 
     return (
 
@@ -17,14 +26,32 @@ export default function DashboardLayout({
             "
         >
 
-            <Navbar />
+            <Navbar
+                onMenuClick={() =>
+                    setIsSidebarOpen(
+                        !isSidebarOpen
+                    )
+                }
+            />
+
+            <Sidebar
+                isOpen={
+                    isSidebarOpen
+                }
+                onClose={() =>
+                    setIsSidebarOpen(
+                        false
+                    )
+                }
+            />
 
             <main
                 className="
-                    max-w-7xl
-                    mx-auto
-                    p-6
-                "
+                    flex
+                    justify-center
+                    items-center
+
+                    h-[calc(100vh-64px)]"
             >
                 {children}
             </main>

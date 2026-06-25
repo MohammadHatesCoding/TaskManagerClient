@@ -1,9 +1,9 @@
-import Navbar from "../components/UI/Navbar";
+import Navbar from "../../components/UI/Navbar";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { ROUTES } from "../Constants/routes";
-import DashboardLayout from "../layouts/DashboardLayout";
-import Card from "../components/UI/Card";
+import { ROUTES } from "../../Constants/routes";
+import DashboardLayout from "../../layouts/DashboardLayout";
+import Card from "../../components/UI/Card";
 
 export default function HomePage() {
 

@@ -1,5 +1,5 @@
 import type { IAuthRepository } from "../../../core/repositories/IAuthRepository";
-import type { LoginCommandDto } from "../../../data/dtos/LoginCommandDto";
+import type { LoginCommandDto } from "../../../data/dtos/Auth/LoginCommandDto";
 
 export class LoginUseCase{
 

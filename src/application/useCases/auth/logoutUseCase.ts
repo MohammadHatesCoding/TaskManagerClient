@@ -1,6 +1,6 @@
 import type { IAuthRepository } from "../../../core/repositories/IAuthRepository";
 
-import type { LogoutCommandDto } from "../../../data/dtos/LogoutCommandDto";
+import type { LogoutCommandDto } from "../../../data/dtos/Auth/LogoutCommandDto";
 
 export class LogoutUseCase {
 

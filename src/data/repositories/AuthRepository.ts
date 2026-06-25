@@ -1,17 +1,17 @@
 import api from "../../infrastructure/api/axiosConfig";
 import type { IAuthRepository } from "../../core/repositories/IAuthRepository";
-import type { RegisterResponseDto } from "../dtos/RegisterResponseDto";
-import type { RegisterCommandDto } from "../dtos/RegisterCommandDto";
-import type { LoginCommandDto } from "../dtos/LoginCommandDto";
-import type { LoginResponseDto } from "../dtos/LoginResponseDto";
-import type { CreatePasswordCommandDto } from "../dtos/CreatePasswordCommandDto";
-import type { CreatePasswordResponseDto } from "../dtos/CreatePasswordResponseDto";
-import type { LogoutCommandDto } from "../dtos/LogoutCommandDto";
-import type { LogoutResponseDto } from "../dtos/LogoutResponseDto";
-import type { ResetPasswordCommandDto } from "../dtos/ResetPasswordCommandDto";
-import type { ResetPasswordResponseDto } from "../dtos/ResetPasswordResponseDto";
-import type { ForgotPasswordCommandDto } from "../dtos/ForgotPasswordCommandDto";
-import type { ForgotPasswordResponseDto } from "../dtos/ForgotPasswordResponseDto";
+import type { RegisterResponseDto } from "../dtos/Auth/RegisterResponseDto";
+import type { RegisterCommandDto } from "../dtos/Auth/RegisterCommandDto";
+import type { LoginCommandDto } from "../dtos/Auth/LoginCommandDto";
+import type { LoginResponseDto } from "../dtos/Auth/LoginResponseDto";
+import type { CreatePasswordCommandDto } from "../dtos/Auth/CreatePasswordCommandDto";
+import type { CreatePasswordResponseDto } from "../dtos/Auth/CreatePasswordResponseDto";
+import type { LogoutCommandDto } from "../dtos/Auth/LogoutCommandDto";
+import type { LogoutResponseDto } from "../dtos/Auth/LogoutResponseDto";
+import type { ResetPasswordCommandDto } from "../dtos/Auth/ResetPasswordCommandDto";
+import type { ResetPasswordResponseDto } from "../dtos/Auth/ResetPasswordResponseDto";
+import type { ForgotPasswordCommandDto } from "../dtos/Auth/ForgotPasswordCommandDto";
+import type { ForgotPasswordResponseDto } from "../dtos/Auth/ForgotPasswordResponseDto";
 
 export class AuthRepository implements IAuthRepository{
 
@@ -25,7 +25,7 @@ export class AuthRepository implements IAuthRepository{
         );
 
         return response.data;
-    }
+    }   
 
     async login(
         dto: LoginCommandDto

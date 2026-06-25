@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
-import Input from "../components/UI/Input";
-import Button from "../components/UI/Button";
+import Input from "../../components/UI/Input";
+import Button from "../../components/UI/Button";
 
-import { AuthRepository } from "../../data/repositories/AuthRepository";
-import { validatePassword } from "../../core/validation/PasswordValidator";
-import { ROUTES } from "../Constants/routes";
+import { AuthRepository } from "../../../data/repositories/AuthRepository";
+import { validatePassword } from "../../../core/validation/PasswordValidator";
+import { ROUTES } from "../../Constants/routes";
 import { Link } from "react-router-dom";
-import AuthLayout from "../layouts/Layout";
-import Card from "../components/UI/Card";
-import { ResetPasswordUseCase } from "../../application/useCases/auth/ResetPasswordUseCase";
+import AuthLayout from "../../layouts/Layout";
+import Card from "../../components/UI/Card";
+import { ResetPasswordUseCase } from "../../../application/useCases/auth/ResetPasswordUseCase";
 
 export default function ResetPasswordPage() {
     const navigate = useNavigate();

@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Input from "../components/UI/Input";
-import Button from "../components/UI/Button";
+import Input from "../../components/UI/Input";
+import Button from "../../components/UI/Button";
 
-import { LoginUseCase } from "../../application/useCases/auth/LoginUseCase";
-import { AuthRepository } from "../../data/repositories/AuthRepository";
-import { ROUTES } from "../Constants/routes";
-import AuthLayout from "../layouts/Layout";
-import Card from "../components/UI/Card";
+import { LoginUseCase } from "../../../application/useCases/auth/LoginUseCase";
+import { AuthRepository } from "../../../data/repositories/AuthRepository";
+import { ROUTES } from "../../Constants/routes";
+import AuthLayout from "../../layouts/Layout";
+import Card from "../../components/UI/Card";
 import { Link } from "react-router-dom";
 
 export default function LoginPage() {

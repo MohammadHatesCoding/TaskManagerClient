@@ -37,12 +37,14 @@ type InputProps = {
     type?: string;
     value: string;
     onChange: (value: string) => void;
+    disabled?: boolean;
 };
 
 export default function Input({
     label,
     type = "text",
     value,
+    disabled = false,
     onChange
 }: InputProps) {
 
@@ -64,6 +66,7 @@ export default function Input({
             <input
                 type={type}
                 value={value}
+                disabled={disabled}
                 onChange={(e) =>
                     onChange(
                         e.target.value

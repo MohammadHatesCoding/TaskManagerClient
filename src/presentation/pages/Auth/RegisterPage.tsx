@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Input from "../components/UI/Input";
-import Button from "../components/UI/Button";
+import Input from "../../components/UI/Input";
+import Button from "../../components/UI/Button";
 
-import { RegisterUseCase } from "../../application/useCases/auth/RegisterUseCase";
-import { AuthRepository } from "../../data/repositories/AuthRepository";
-import AuthLayout from "../layouts/Layout";
-import Card from "../components/UI/Card";
+import { RegisterUseCase } from "../../../application/useCases/auth/RegisterUseCase";
+import { AuthRepository } from "../../../data/repositories/AuthRepository";
+import AuthLayout from "../../layouts/Layout";
+import Card from "../../components/UI/Card";
 import { Link } from "react-router-dom";
-import { ROUTES } from "../Constants/routes";
+import { ROUTES } from "../../Constants/routes";
 
 export default function RegisterPage() {
 
